@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
-@import "./_keyframes"
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import "./_topography"
 
 *,
 ::after,
@@ -12,9 +13,120 @@ html
     font-size: 62.5%
     font-family: 'Roboto', sans-serif
 
-body
-    background-color: red
-    background: url("/image/body-background.jpg")
+.wrapper
+    width: 100vw
+    overflow: hidden
+    margin: 0 auto
+    color: $black
 
+.navigationMobile
+    position: absolute
+    bottom: 0
+    width: 100vw
+    height: 0vh
+    z-index: 100
+    background-color: $darkGray
+    padding: 0px 20px
+
+.navigationMobileLinks
+    margin-top: 45%
+    
+    &__link
+        font-size: 38px
+        font-weight: bold
+        text-decoration: none
+        text-transform: uppercase
+        color: $white
+        letter-spacing: 3px
+        padding-bottom: 30px
+
+.navigationMobileSocialMedia
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 50%
+    
+    &__icon
+        padding: 0px 20px
+
+.navigationBar
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-content: center
+    align-items: center
+    padding: 0px 20px
+    margin-top: 30px
+
+    &__logo
+        font-size: 1.6rem
+        font-weight: 500
+        z-index: 1000
+    
+    &__button
+        position: relative
+        width: 25px
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        z-index: 1000
+
+    &__buttonMidLine
+        width: 100%
+        height: 3px
+        background: $black
+        border-radius: 5px
+        transition: 0.3s
+
+    &__buttonTopLine
+        width: 25px
+        height: 3px
+        background: $black
+        border-radius: 5px
+        transition: 0.3s
+        transform: translateY(-5px)
+
+    &__buttonBotLine
+        width: 25px
+        height: 3px
+        background: $black
+        border-radius: 5px
+        transition: 0.3s
+        transform: translateY(5px)
+
+    &__button.active .navigationBar__buttonMidLine
+        transform: translateX(30px)
+        opacity: 0
+
+    &__button.active .navigationBar__buttonTopLine
+        transform: translateY(3px) rotate(45deg)
+
+    &__button.active .navigationBar__buttonBotLine
+        transform: translateY(-3px) rotate(-45deg)
+
+.navigationMobileAnimation
+    animation: showMobileMenu ease-out 1s forwards
+
+.navigationLogoAnimation
+    animation: colorNavigationLogo ease-out 1s forwards
+
+.navigationButtonAnimation
+    animation: colorButtonBars ease-out 1s forwards
+
+.navigationMobileAnimationReverse
+    animation: closeMobileMenu ease-in 1s forwards
+
+.navigationLogoAnimationReverse
+    animation: colorNavigationLogo ease-in 1s forwards reverse
+
+.navigationButtonAnimationReverse
+    animation: colorButtonBars ease-in 1s forwards reverse
+
+.navigationLinksAnimation
+    aniamtion: linksOpacity ease-in 1s forwards
+   
 @import "./_medium"
 @import "./_large"
+@import "./_keyframes"
