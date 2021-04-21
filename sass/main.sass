@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import "./_topography"
 
@@ -11,13 +11,17 @@
 
 html
     font-size: 62.5%
-    font-family: 'Roboto', sans-serif
+    font-family: 'Josefin Sans', sans-serif
+    overflow-x: hidden
 
 .wrapper
     width: 100vw
-    overflow: hidden
+    overflow-x: hidden
     margin: 0 auto
     color: $black
+
+.navigation
+    display: none
 
 .navigationMobile
     position: absolute
@@ -129,13 +133,14 @@ html
    
 .header
     width: 100%
-    padding: 40px 20px
+    padding: 0px 20px
+    margin-top: 40px
 
     &__textSection
         padding-top: 50px
 
     &__paragraph
-        padding-top: 50px
+        padding-bottom: 50px
 
 @import "./_medium"
 @import "./_large"
