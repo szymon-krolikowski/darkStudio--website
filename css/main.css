@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 .paragraph {
   font-size: 1.6rem;
+  line-height: 2;
 }
 
 .headingOne {
@@ -193,6 +194,19 @@ html {
 
 .navigationLinksAnimation {
   aniamtion: linksOpacity ease-in 1s forwards;
+}
+
+.header {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.header__textSection {
+  padding-top: 50px;
+}
+
+.header__paragraph {
+  padding-top: 50px;
 }
 
 @-webkit-keyframes showMobileMenu {
