@@ -21,17 +21,32 @@
   line-height: 1;
 }
 
+.headingTwo {
+  font-family: 'Staatliches', cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
 @media screen and (min-width: 768px) {
   .headingOne {
     font-size: 75px;
     letter-spacing: 3px;
   }
+  .headingTwo {
+    font-family: 'Staatliches', cursive;
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 998px) {
   .paragraph {
-    font-size: 1.8rem;
-    line-height: 2;
+    font-size: 1.9rem;
+    line-height: 1.5;
   }
   .link {
     font-size: 1.8rem;
@@ -62,6 +77,13 @@ html {
   overflow-x: hidden;
   margin: 0 auto;
   color: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .navigation {
@@ -245,12 +267,14 @@ html {
 
 .imageSlider {
   width: 100vw;
+  height: 200px;
   margin-top: 50px;
 }
 
 .imageSlider__image {
-  width: 100%;
   position: absolute;
+  width: 100%;
+  height: 200px;
   opacity: 1;
   -webkit-animation: imageOne 5s linear alternate infinite;
           animation: imageOne 5s linear alternate infinite;
@@ -260,6 +284,41 @@ html {
   opacity: 0;
   -webkit-animation: imageTwo 5s linear alternate infinite;
           animation: imageTwo 5s linear alternate infinite;
+}
+
+.question {
+  display: -ms-grid;
+  display: grid;
+  padding: 0px 20px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+
+.partners {
+  width: 100vw;
+  padding: 0px 20px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.partners__logoSection {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners__image {
+  width: 80%;
 }
 
 @media screen and (min-width: 768px) {
@@ -314,10 +373,52 @@ html {
   }
   .imageSlider {
     margin-top: 80px;
+    height: 450px;
   }
   .imageSlider__image {
     width: calc(100% - 20px);
+    height: 450px;
     margin: 0 20px 0;
+  }
+  .question {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    margin-top: 100px;
+  }
+  .partners {
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .partners__sectionParagraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    text-align: center;
+    width: 10%;
+  }
+  .partners__paragraph {
+    text-align: center;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .partners__logoSection {
+    width: 90%;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .partners__image {
+    width: 50%;
   }
 }
 
@@ -358,13 +459,42 @@ html {
   }
   .imageSlider {
     width: 100%;
+    height: 600px;
     margin-top: 80px;
     margin-left: calc((100vw - 1250px)/2);
     max-width: calc(1250px + (100vw - 1250px)/2);
   }
   .imageSlider__image {
     width: 100%;
-    height: 70%;
+    height: 600px;
+  }
+  .question {
+    max-width: 1250px;
+    margin: 100px auto;
+  }
+  .partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1250px;
+    margin: 80px auto 0px;
+  }
+  .partners__logoSection {
+    width: 90%;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  .partners__sectionParagraph {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 20px;
+    width: 10%;
+  }
+  .partners__paragraph {
+    text-align: center;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
 }
 

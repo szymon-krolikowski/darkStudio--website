@@ -34,9 +34,40 @@
 
     .imageSlider
         margin-top: 80px
+        height: 450px
 
         &__image
             width: calc(100% - 20px)
+            height: 450px
             margin: 0 20px 0
+
+    .question
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: 50px
+        margin-top: 100px
+        
+    .partners
+        margin-top: 100px
+        display: flex
+
+        &__sectionParagraph
+            display: flex
+            justify-content: center
+            align-items: center
+            align-content: center
+            text-align: center
+            width: 10%
+
+        &__paragraph
+           text-align: center
+           transform: rotate(-90deg)
+
+        &__logoSection
+            width: 90%
+            grid-template-columns: repeat(4, 1fr)
+            
+
+        &__image
+            width: 50%
             
     
