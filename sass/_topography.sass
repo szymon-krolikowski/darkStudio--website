@@ -1,9 +1,23 @@
 $black: rgb(38, 38, 38)
 $darkGray: rgb(38,38,38)
 $white: rgb(255,255,255)
+$gray: rgb(207, 207, 207)
+$grayLight: rgb(100, 100, 100)
     
 .paragraph
     font-size: 1.6rem
+    line-height: 2
+
+.paragraphGray
+    font-size: 1.6rem
+    line-height: 2
+    color: $white
+
+.link
+    font-size: 1.6rem
+    line-height: 2
+    text-decoration: none
+    color: $black
 
 .headingOne
     font-family: 'Staatliches', cursive
@@ -12,3 +26,53 @@ $white: rgb(255,255,255)
     text-transform: uppercase
     letter-spacing: 2px
     line-height: 1
+
+.headingTwo
+    font-family: 'Staatliches', cursive
+    font-size: 30px
+    margin-bottom: 20px
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 2px
+    line-height: 1
+
+.headingTwoGray
+    font-family: 'Staatliches', cursive
+    font-size: 41px
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 2px
+    line-height: 1
+    margin-bottom: 20px
+    color: $gray
+
+@media screen and ( min-width: 768px )
+    .headingOne
+        font-size: 75px
+        letter-spacing: 3px
+
+    .headingTwo
+        font-family: 'Staatliches', cursive
+        font-size: 35px
+        margin-bottom: 50px
+
+    .headingTwoGray
+        font-size: 50px
+        letter-spacing: 3px
+
+@media screen and ( min-width: 998px )
+    .paragraph
+        font-size: 1.9rem
+        line-height: 1.5
+
+    .link
+        font-size: 1.8rem
+
+    .headingOne
+        font-size: 92.5px
+        letter-spacing: 3px
+
+    .headingTwoGray
+        font-size: 60px
+        letter-spacing: 3px
+    
