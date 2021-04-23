@@ -169,9 +169,9 @@ html
 
 .partners
     width: 100vw
-    padding: 0px 20px
-    margin-top: 50px
+    padding: 0px 20px 80px
     text-align: center
+    margin-top: 50px
 
     &__logoSection
         width: 100%
@@ -187,8 +187,8 @@ html
 
 .darkSection
     width: 100vw
-    padding: 100px 20px 0px
     background-color: $darkGray
+    padding: 80px 20px 0px
 
 .darkArticle
     width: 100%
@@ -200,11 +200,11 @@ html
         margin-bottom: 80px
 
     &__unorderList
-        color: $grayLight
-        list-style: none
-        margin-top: 50px
         display: grid
         grid-template-columns: repeat(2, 1fr)
+        list-style: none
+        color: $grayLight
+        margin-top: 50px
 
 .footer
     width: 100vw
@@ -221,7 +221,6 @@ html
         &:nth-of-type(2)
             margin-top: 20px
             
-
     &__infoBox:nth-last-child(1)
         display: none
     
@@ -233,24 +232,21 @@ html
     &__input
         display: none
         width: 73%
+        font-size: 1.6rem
+        font-family: 'Josefin Sans', sans-serif
         background: $darkGray
         border-left: none
         border-right: none
         border-top: none
         border-bottom: 1px solid $white
-        padding: 5px 0px
         color: $white
-        font-size: 1.6rem
-        font-family: 'Josefin Sans', sans-serif
+        padding: 5px 0px
 
         &::placeholder
             font-family: 'Josefin Sans', sans-serif
             font-size: 1.6rem
-            color: $grayLight
             text-align: center
-
-
-   
+            color: $grayLight
 
 @import "./_medium"
 @import "./_large"

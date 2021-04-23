@@ -323,9 +323,9 @@ html {
 
 .partners {
   width: 100vw;
-  padding: 0px 20px;
-  margin-top: 50px;
+  padding: 0px 20px 80px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .partners__logoSection {
@@ -348,8 +348,8 @@ html {
 
 .darkSection {
   width: 100vw;
-  padding: 100px 20px 0px;
   background-color: #262626;
+  padding: 80px 20px 0px;
 }
 
 .darkArticle {
@@ -366,13 +366,13 @@ html {
 }
 
 .darkArticle__unorderList {
-  color: #646464;
-  list-style: none;
-  margin-top: 50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  color: #646464;
+  margin-top: 50px;
 }
 
 .footer {
@@ -408,43 +408,43 @@ html {
 .footer__input {
   display: none;
   width: 73%;
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans', sans-serif;
   background: #262626;
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: 1px solid white;
-  padding: 5px 0px;
   color: white;
-  font-size: 1.6rem;
-  font-family: 'Josefin Sans', sans-serif;
+  padding: 5px 0px;
 }
 
 .footer__input::-webkit-input-placeholder {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.6rem;
-  color: #646464;
   text-align: center;
+  color: #646464;
 }
 
 .footer__input:-ms-input-placeholder {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.6rem;
-  color: #646464;
   text-align: center;
+  color: #646464;
 }
 
 .footer__input::-ms-input-placeholder {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.6rem;
-  color: #646464;
   text-align: center;
+  color: #646464;
 }
 
 .footer__input::placeholder {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.6rem;
-  color: #646464;
   text-align: center;
+  color: #646464;
 }
 
 @media screen and (min-width: 768px) {
@@ -498,8 +498,8 @@ html {
     padding-bottom: 50px;
   }
   .imageSlider {
-    margin-top: 80px;
     height: 450px;
+    margin-top: 80px;
   }
   .imageSlider__image {
     width: calc(100% - 20px);
@@ -513,12 +513,13 @@ html {
     margin-top: 100px;
   }
   .partners {
-    margin-top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 100px;
   }
   .partners__sectionParagraph {
+    width: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -531,7 +532,6 @@ html {
     -ms-flex-line-pack: center;
         align-content: center;
     text-align: center;
-    width: 10%;
   }
   .partners__paragraph {
     text-align: center;
@@ -566,9 +566,9 @@ html {
         grid-template-columns: 1fr 5fr 1fr;
   }
   .footer__icon {
-    padding-right: 20px;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+    padding-right: 20px;
   }
   .footer__infoBox {
     text-align: center;
@@ -577,7 +577,6 @@ html {
     text-align: left;
   }
   .footer__infoBox:nth-of-type(2) {
-    margin-top: 0px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -593,6 +592,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 0px;
   }
   .footer__infoBox:nth-last-child(1) {
     display: block;
@@ -658,7 +658,7 @@ html {
     display: -ms-flexbox;
     display: flex;
     max-width: 1250px;
-    margin: 80px auto 0px;
+    margin: 80px auto 80px;
   }
   .partners__logoSection {
     width: 90%;
@@ -666,11 +666,11 @@ html {
         grid-template-columns: repeat(5, 1fr);
   }
   .partners__sectionParagraph {
+    width: 10%;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
     padding: 20px;
-    width: 10%;
   }
   .partners__paragraph {
     text-align: center;
