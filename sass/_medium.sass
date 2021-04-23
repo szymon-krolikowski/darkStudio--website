@@ -75,5 +75,40 @@
 
         &__textBox
             margin-bottom: 80px
+
+    .footer
+        width: 100vw
+        padding: 80px 20px 20px
+        background-color: $darkGray
+
+        &__article
+            width: 100%
+            display: grid
+            grid-template-columns: 1fr 5fr 1fr
+
+        &__icon
+            padding-right: 20px
+            transform: scale(0.9)
+
+        &__infoBox
+            text-align: center
+
+            &:nth-of-type(1)
+                text-align: left
+
+            &:nth-of-type(2)
+                margin-top: 0px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-content: center
+                align-items: center
+                
+        &__infoBox:nth-last-child(1)
+            display: block
+            text-align: right
+
+        &__input
+            display: block
             
     

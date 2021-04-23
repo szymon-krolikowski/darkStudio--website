@@ -187,8 +187,7 @@ html
 
 .darkSection
     width: 100vw
-    padding: 100px 20px
-    margin-top: 100px
+    padding: 100px 20px 0px
     background-color: $darkGray
 
 .darkArticle
@@ -207,7 +206,48 @@ html
         display: grid
         grid-template-columns: repeat(2, 1fr)
 
+.footer
+    width: 100vw
+    padding: 80px 20px 20px
+    background-color: $darkGray
 
+    &__icon
+        padding-right: 20px
+        transform: scale(0.9)
+
+    &__infoBox
+        text-align: center
+
+        &:nth-of-type(2)
+            margin-top: 20px
+            
+
+    &__infoBox:nth-last-child(1)
+        display: none
+    
+    &__paragraph
+        font-size: 1.6rem
+        line-height: 2
+        color: $grayLight
+
+    &__input
+        display: none
+        width: 73%
+        background: $darkGray
+        border-left: none
+        border-right: none
+        border-top: none
+        border-bottom: 1px solid $white
+        padding: 5px 0px
+        color: $white
+        font-size: 1.6rem
+        font-family: 'Josefin Sans', sans-serif
+
+        &::placeholder
+            font-family: 'Josefin Sans', sans-serif
+            font-size: 1.6rem
+            color: $grayLight
+            text-align: center
 
 
    
