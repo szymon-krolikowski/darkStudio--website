@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/navigation.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- <nav class="navigationMobile">
+            <section class="navigationMobileLinks">
+                <p class="navigationMobileLinks__link"><a class="navigationMobileLinks__link" href="">Work</a></p>
+                <p class="navigationMobileLinks__link"><a class="navigationMobileLinks__link" href="">About</a></p>
+                <p class="navigationMobileLinks__link"><a class="navigationMobileLinks__link" href="">Contact</a></p>
+            </section>
+            <section class="navigationMobileSocialMedia">
+                <img class="navigationMobileSocialMedia__icon" src="svg/facebook.svg">
+                <img class="navigationMobileSocialMedia__icon" src="svg/instagram.svg">
+                <img class="navigationMobileSocialMedia__icon" src="svg/twitter.svg">
+                <img class="navigationMobileSocialMedia__icon" src="svg/linkedin.svg">
+            </section>
+        </nav> -->
+        <section class="navigationBar">
+            <p class="navigationBar__logo">Evviva l'arte</p>
+            <div class="navigationBar__button">
+                <div class="navigationBar__buttonTopLine"></div>
+                <div class="navigationBar__buttonMidLine"></div>
+                <div class="navigationBar__buttonBotLine"></div>
+            </div>
+            <nav class="navigation">
+                <a class="link" href="">Praca</a>
+                <a class="link" href="">O nas</a>
+                <a class="link" href="">Kontakt</a>
+            </nav>
+        </section>
+        <header class="header">
+            <section class="header__headingSection">
+                <h1 class="headingOne">Pozostańmy w<br> kontakcie</h1>
+            </section>
+            <section class="header__textSection">
+                <p class="paragraph header__paragraph">Pozyskujemy reklamodawców i pomagamy w rozwoju marki, produktów, usług i wizerunku.</p>
+                <p class="paragraph">Łącząc strategię, design i technologię, tworzymy udane, kreatywne i innowacyjne podejście do marki.</p>
+            </section>
+        </header>
+
+        <section class="imageSlider">
+            <div class="imageSlider__map"></div>
+        </section>
+
+        <section class="contact">
+            <div class="contact__contactDetails">
+                <h2 class="headingTwo">Nasze biuro</h2>
+                <p class="paragraph">ul. Złota 64</p>
+                <p class="paragraph">88-800 Warszawa</p>
+                <p class="paragraph">+48 943 234 123</p>
+                <p class="paragraph">evvivarte@studio.com</p>
+            </div>
+            <div class="contact__contactDetails">
+                <h2 class="headingTwo">Napisz do nas</h2>
+                <form class="form" action="">
+                    <div class="form__labelBox">
+                        <!-- <label class="form__label" for="">Twoje imie</label> -->
+                        <input class="form__input" type="text" placeholder="Imię i nazwisko">
+                    </div>
+                    <div class="form__labelBox">
+                        <!-- <label class="form__label" for="">Twoje imie</label> -->
+                        <input class="form__input" type="text" placeholder="E-mail">
+                    </div>
+                    <div class="form__labelBox">
+                        <!-- <label class="form__label" for="">Twoje imie</label> -->
+                        <input class="form__input" type="text" placeholder="Numer telefonu">
+                    </div>
+                    <div class="form__labelBox">
+                        <!-- <label class="form__label" for="">Twoje imie</label> -->
+                        <input class="form__input" type="text" placeholder="Twoja firma">
+                    </div>
+                    <textarea placeholder="Twoja wiadomość" class="form__textArea"></textarea>
+                    <button class="form__button">Send</button>
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <article class="footer__article">
+                <div class="footer__infoBox">
+                    <p class="paragraphGray">Evviva l'arte</p>
+                    <p class="footer__paragraph">Design Studio</p>
+                    <p class="footer__paragraph">+48 943 234 123</p>
+                    <p class="footer__paragraph">evvivarte@studio.com</p>
+                </div>
+                <div class="footer__infoBox">
+                    <p class="paragraphGray">Dołącz do nas już dzisiaj aby otrzymywać nowe informacje</p>
+                    <input class="footer__input" type="mail" placeholder="Subskrybuj nasz newslatter">
+                    <div style="margin-top: 20px">
+                        <img class="footer__icon" src="svg/facebook.svg">
+                        <img class="footer__icon" src="svg/instagram.svg">
+                        <img class="footer__icon" src="svg/twitter.svg">
+                        <img class="footer__icon" src="svg/linkedin.svg">
+                    </div>
+                </div>
+                <div class="footer__infoBox">
+                    <p class="paragraphGray">Nasze biuro</p>
+                    <p class="footer__paragraph">Warszawa</p>
+                    <p class="footer__paragraph">ul. Złota 64</p>
+                    <p class="footer__paragraph">Polska</p>
+                </div>
+            </article>
+        </footer>
+
+        <section class="lastSection">
+            <p class="paragraphGray">Witryna stworzona przez Evviva l'arte Studio</p>
+        </section>
+    </div>
+    <script src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+</body>
+</html>
