@@ -48,6 +48,12 @@
   color: #cfcfcf;
 }
 
+.input {
+  border: none;
+  border-bottom: 1px solid #646464;
+  padding: 5px 0px;
+}
+
 @media screen and (min-width: 768px) {
   .headingOne {
     font-size: 75px;
@@ -311,6 +317,11 @@ html {
           animation: imageTwo 5s linear alternate infinite;
 }
 
+.imageSlider__map {
+  width: 100%;
+  height: 200px;
+}
+
 .question {
   display: -ms-grid;
   display: grid;
@@ -319,6 +330,127 @@ html {
       grid-template-columns: 1fr;
   grid-gap: 50px;
   margin-top: 50px;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  padding: 0px 20px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 50px;
+  margin: 50px 0px;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 10px;
+  grid-gap: 20px;
+}
+
+.form__labelBox {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 5px 0px;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 1px solid #262626;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form__input:-ms-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form__input::-ms-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form__input::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form__textArea {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 3/1/4/3;
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  padding: 5px 0px;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: 'Josefin Sans', sans-serif;
+  min-height: 100px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.form__textArea:focus {
+  outline: none;
+  border-bottom: 1px solid #262626;
+}
+
+.form__textArea::-webkit-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form__textArea:-ms-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form__textArea::-ms-input-placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form__textArea::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form__button {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: 4/2/4/2;
+  text-align: right;
+  border: none;
+  background: none;
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  color: #262626;
+  cursor: pointer;
+}
+
+.form__label {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .partners {
@@ -377,8 +509,13 @@ html {
 
 .footer {
   width: 100vw;
-  padding: 80px 20px 20px;
+  padding: 80px 20px 0px;
   background-color: #262626;
+}
+
+.footer__article {
+  border-bottom: 1px solid #646464;
+  padding-bottom: 80px;
 }
 
 .footer__icon {
@@ -447,6 +584,12 @@ html {
   color: #646464;
 }
 
+.lastSection {
+  background-color: #262626;
+  text-align: center;
+  padding: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     width: 30%;
@@ -506,11 +649,20 @@ html {
     height: 450px;
     margin: 0 20px 0;
   }
+  .imageSlider__map {
+    width: calc(100% - 20px);
+    height: 450px;
+  }
   .question {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     grid-gap: 50px;
     margin-top: 100px;
+  }
+  .contact {
+    -ms-grid-columns: 1fr 2.5fr;
+        grid-template-columns: 1fr 2.5fr;
+    margin: 100px 0px 80px;
   }
   .partners {
     display: -webkit-box;
@@ -555,7 +707,7 @@ html {
   }
   .footer {
     width: 100vw;
-    padding: 80px 20px 20px;
+    padding: 80px 20px 0px;
     background-color: #262626;
   }
   .footer__article {
@@ -649,9 +801,19 @@ html {
     width: 100%;
     height: 600px;
   }
+  .imageSlider__map {
+    width: 100%;
+    height: 600px;
+  }
   .question {
     max-width: 1250px;
     margin: 100px auto;
+  }
+  .contact {
+    width: 1250px;
+    margin: 100px auto 80px;
+    -ms-grid-columns: 1fr 2.5fr;
+        grid-template-columns: 1fr 2.5fr;
   }
   .partners {
     display: -webkit-box;

@@ -160,12 +160,87 @@ html
         opacity: 0
         animation: imageTwo 5s linear alternate infinite
 
+    &__map
+        width: 100%
+        height: 200px
+
 .question
     display: grid
     padding: 0px 20px
     grid-template-columns: 1fr
     grid-gap: 50px
     margin-top: 50px
+
+.contact
+    display: grid
+    padding: 0px 20px
+    grid-template-columns: 1fr
+    grid-gap: 50px
+    margin: 50px 0px
+
+.form
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    padding-bottom: 10px
+    grid-gap: 20px
+
+    &__labelBox
+        position: relative
+        width: 100%
+        margin-bottom: 20px
+
+    &__input
+        border: none
+        border-bottom: 1px solid $gray
+        padding: 5px 0px
+        width: 100%
+        font-size: 1.6rem
+        font-family: 'Josefin Sans', sans-serif
+
+        &:focus
+            outline: none
+            border-bottom: 1px solid $darkGray
+
+        &::placeholder
+            font-family: 'Josefin Sans', sans-serif
+            font-weight: bold
+
+    &__textArea
+        grid-area: 3/1/4/3
+        border: none
+        border-bottom: 1px solid $gray
+        padding: 5px 0px
+        width: 100%
+        font-size: 1.6rem
+        font-family: 'Josefin Sans', sans-serif
+        min-height: 100px
+        max-width: 100%
+        min-width: 100%
+
+        &:focus
+            outline: none
+            border-bottom: 1px solid $darkGray
+
+        &::placeholder
+            font-family: 'Josefin Sans', sans-serif
+            font-weight: bold
+
+    &__button
+        grid-area: 4/2/4/2
+        text-align: right
+        border: none
+        background: none
+        font-family: 'Staatliches', cursive
+        font-size: 25px
+        color: $darkGray
+        cursor: pointer
+
+
+    &__label
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+
 
 .partners
     width: 100vw
@@ -208,8 +283,12 @@ html
 
 .footer
     width: 100vw
-    padding: 80px 20px 20px
+    padding: 80px 20px 0px
     background-color: $darkGray
+
+    &__article
+        border-bottom: 1px solid $grayLight
+        padding-bottom: 80px
 
     &__icon
         padding-right: 20px
@@ -247,6 +326,11 @@ html
             font-size: 1.6rem
             text-align: center
             color: $grayLight
+
+.lastSection
+    background-color: $darkGray
+    text-align: center
+    padding: 20px
 
 @import "./_medium"
 @import "./_large"
