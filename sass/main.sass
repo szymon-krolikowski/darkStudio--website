@@ -26,39 +26,6 @@ body
     display: flex
     flex-direction: column
 
-.navigation
-    display: none
-
-.navigationMobile
-    position: absolute
-    bottom: 0
-    width: 100vw
-    height: 0vh
-    z-index: 100
-    background-color: $darkGray
-    padding: 0px 20px
-
-.navigationMobileLinks
-    margin-top: 45%
-    
-    &__link
-        font-size: 38px
-        font-weight: bold
-        text-decoration: none
-        text-transform: uppercase
-        color: $white
-        letter-spacing: 3px
-        padding-bottom: 30px
-
-.navigationMobileSocialMedia
-    width: 100%
-    display: flex
-    justify-content: center
-    margin-top: 50%
-    
-    &__icon
-        padding: 0px 20px
-
 .navigationBar
     width: 100%
     display: flex
@@ -68,74 +35,71 @@ body
     padding: 0px 20px
     margin-top: 30px
 
+    &__button
+        position: relative
+        padding: 1em
+        width: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        align-content: center
+        flex-direction: column
+        
+    &__spanOne
+        width: 30px
+        height: 2px
+        background: $black
+
+    &__spanTwo
+        width: 30px
+        height: 2px
+        background: $black
+        margin-top: 5px
+
     &__logo
         font-size: 1.6rem
         font-weight: 500
         z-index: 1000
-    
-    &__button
-        position: relative
-        width: 25px
-        height: 100%
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        z-index: 1000
 
-    &__buttonMidLine
-        width: 100%
-        height: 3px
-        background: $black
-        border-radius: 5px
-        transition: 0.3s
+.navigationMobile
+    z-index: 0
+    position: absolute
+    background-color: $black
+    height: 100vh
+    width: 100%
+    top: -20%
+    z-index: 10000
 
-    &__buttonTopLine
-        width: 25px
-        height: 3px
-        background: $black
-        border-radius: 5px
-        transition: 0.3s
-        transform: translateY(-5px)
+    &__menu
+        padding: 120px 0 0 20px
+        text-align: left
 
-    &__buttonBotLine
-        width: 25px
-        height: 3px
-        background: $black
-        border-radius: 5px
-        transition: 0.3s
-        transform: translateY(5px)
+    &__list
+        list-style: none
 
-    &__button.active .navigationBar__buttonMidLine
-        transform: translateX(30px)
-        opacity: 0
+    &__link
+        font-family: 'Staatliches', cursive
+        font-size: 41px
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 3px
+        line-height: 1
+        color: $gray
+        position: absolute
+        top: 20%
+        text-decoration: none
 
-    &__button.active .navigationBar__buttonTopLine
-        transform: translateY(3px) rotate(45deg)
+        &--2
+            position: absolute
+            top: 30%
+        
+        &--3
+            position: absolute
+            top: 40%
 
-    &__button.active .navigationBar__buttonBotLine
-        transform: translateY(-3px) rotate(-45deg)
 
-.navigationMobileAnimation
-    animation: showMobileMenu ease-out 1s forwards
-
-.navigationLogoAnimation
-    animation: colorNavigationLogo ease-out 1s forwards
-
-.navigationButtonAnimation
-    animation: colorButtonBars ease-out 1s forwards
-
-.navigationMobileAnimationReverse
-    animation: closeMobileMenu ease-in 1s forwards
-
-.navigationLogoAnimationReverse
-    animation: colorNavigationLogo ease-in 1s forwards reverse
-
-.navigationButtonAnimationReverse
-    animation: colorButtonBars ease-in 1s forwards reverse
-
-.navigationLinksAnimation
-    aniamtion: linksOpacity ease-in 1s forwards
+.navigation
+    display: none
    
 .header
     width: 100%
