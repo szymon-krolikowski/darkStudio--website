@@ -103,6 +103,11 @@ html {
   overflow-x: hidden;
 }
 
+body {
+  position: relative;
+  background-image: url("../image/2.png");
+}
+
 .wrapper {
   width: 100vw;
   overflow-x: hidden;
@@ -364,6 +369,7 @@ html {
   width: 100%;
   font-size: 1.6rem;
   font-family: 'Josefin Sans', sans-serif;
+  background: transparent;
 }
 
 .form__input:focus {
@@ -406,6 +412,7 @@ html {
   min-height: 100px;
   max-width: 100%;
   min-width: 100%;
+  background: transparent;
 }
 
 .form__textArea:focus {
@@ -590,6 +597,39 @@ html {
   padding: 20px;
 }
 
+.startOverlay {
+  position: absolute;
+  width: 100vw;
+  height: 3000px;
+  background-color: #262626;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.startOverlay__paragraph {
+  font-family: 'Staatliches', cursive;
+  font-size: 41px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-top: 30vh;
+  color: #cfcfcf;
+}
+
+.startOverlay__pacman {
+  height: 20%;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     width: 30%;
@@ -753,6 +793,9 @@ html {
   .footer__input {
     display: block;
   }
+  .startOverlay__paragraph {
+    font-size: 75px;
+  }
 }
 
 @media screen and (min-width: 998px) {
@@ -849,6 +892,9 @@ html {
   }
   .footer__input {
     width: 41%;
+  }
+  .startOverlay__paragraph {
+    font-size: 91px;
   }
 }
 

@@ -14,6 +14,10 @@ html
     font-family: 'Josefin Sans', sans-serif
     overflow-x: hidden
 
+body
+    position: relative
+    background-image: url("../image/2.png")
+
 .wrapper
     width: 100vw
     overflow-x: hidden
@@ -196,6 +200,7 @@ html
         width: 100%
         font-size: 1.6rem
         font-family: 'Josefin Sans', sans-serif
+        background: transparent
 
         &:focus
             outline: none
@@ -216,6 +221,7 @@ html
         min-height: 100px
         max-width: 100%
         min-width: 100%
+        background: transparent
 
         &:focus
             outline: none
@@ -331,6 +337,32 @@ html
     background-color: $darkGray
     text-align: center
     padding: 20px
+
+.startOverlay
+    position: absolute
+    width: 100vw
+    height: 3000px
+    background-color: $black
+    z-index: 10000
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    &__paragraph
+        font-family: 'Staatliches', cursive
+        font-size: 41px
+        font-weight: bold
+        text-transform: uppercase
+        letter-spacing: 2px
+        line-height: 1
+        margin-top: 30vh
+        color: $gray
+
+    &__pacman
+        height: 20%
+
+        
+        
 
 @import "./_medium"
 @import "./_large"
