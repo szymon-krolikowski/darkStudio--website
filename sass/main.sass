@@ -18,6 +18,8 @@ body
     position: relative
     background-image: url("../image/2.png")
 
+
+
 .wrapper
     width: 100vw
     overflow-x: hidden
@@ -325,8 +327,18 @@ body
     &__pacman
         height: 20%
 
-        
-        
+.cursor
+    position: fixed
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    background: rgba(0,0,0,0.15)
+    transform: translate(-50%, -50%)
+    pointer-events: none
+    mix-blend-mode: difference
+    transition: 0.5
+
+
 
 @import "./_medium"
 @import "./_large"

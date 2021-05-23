@@ -10,7 +10,7 @@ const linku = () => {
 
 const showMobileMenu = () => {
     t1.addLabel("start")
-      .to(".navigationMobile", 1.5, {top: "0", ease:"power2.out"}, "start")
+      .to(".navigationMobile", 1.5, {top: "0", ease:"power2.out", opacity: 1}, "start")
       .to(".navigationBar__spanOne", {background: "white", zIndex: 100000, rotation: 45}, "start")
       .to(".navigationBar__spanTwo", {background: "white", zIndex: 100000, rotation: -45, y:-7}, "start")
       .staggerFromTo(".navigationMobile__link", 1, {x:-100, opacity: 0, ease:"power2.out"}, 

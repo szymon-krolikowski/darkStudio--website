@@ -23,12 +23,12 @@ gsap.fromTo(questionSection.children, 1,
       markers: true
 }});
 
-gsap.fromTo(partnersSection.children, 0.5,
-   {y: "+=50", opacity: 0},
-   {y:0, opacity: 1, stagger: 0.2,
-    scrollTrigger: {
-      trigger: ".partners", start: "-20% center"
-}});
+// gsap.fromTo(partnersSection.children, 0.5,
+//    {y: "+=50", opacity: 0},
+//    {y:0, opacity: 1, stagger: 0.2,
+//     scrollTrigger: {
+//       trigger: ".partners", start: "-20% center"
+// }});
 
 darkArticleHeadings.forEach(section => {
   gsap.fromTo(section.children, 1,

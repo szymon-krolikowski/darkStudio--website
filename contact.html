@@ -11,31 +11,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 </head>
 <body>
+    <div class="cursor"></div>
     <div class="startOverlay">
-        <p class="startOverlay__paragraph">Kontakt</p>
+        <p class="startOverlay__paragraph">Evviva l'arte</p>
         <br>
         <iframe class="startOverlay__pacman" src="svg/pakman.svg" scrolling="no" frameborder="0"></iframe>
     </div>
     <div class="wrapper">
-        <!-- <nav class="navigationMobile">
-            <section class="navigationMobileLinks">
-                <p class="navigationMobileLinks__link"><a class="navigationMobileLinks__link" href="">Work</a></p>
-                <p class="navigationMobileLinks__link"><a class="navigationMobileLinks__link" href="">About</a></p>
-                <p class="navigationMobileLinks__link"><a class="navigationMobileLinks__link" href="">Contact</a></p>
-            </section>
-            <section class="navigationMobileSocialMedia">
-                <img class="navigationMobileSocialMedia__icon" src="svg/facebook.svg">
-                <img class="navigationMobileSocialMedia__icon" src="svg/instagram.svg">
-                <img class="navigationMobileSocialMedia__icon" src="svg/twitter.svg">
-                <img class="navigationMobileSocialMedia__icon" src="svg/linkedin.svg">
-            </section>
-        </nav> -->
+        
         <section class="navigationBar">
             <p class="navigationBar__logo">Evviva l'arte</p>
             <div class="navigationBar__button">
-                <div class="navigationBar__buttonTopLine"></div>
-                <div class="navigationBar__buttonMidLine"></div>
-                <div class="navigationBar__buttonBotLine"></div>
+                <span class="navigationBar__spanOne"></span>
+                <span class="navigationBar__spanTwo"></span>
             </div>
             <nav class="navigation">
                 <a class="link" href="">Praca</a>
@@ -43,6 +31,17 @@
                 <a class="link" href="contact.html">Kontakt</a>
             </nav>
         </section>
+
+        <nav class="navigationMobile">
+            <div class="navigationMobile__menu">
+                <ul class="navigationMobile__list">
+                    <li><a class="navigationMobile__link" href="">Praca</a></li>
+                    <li><a class="navigationMobile__link navigationMobile__link--2" href="index.html">O nas</a></li>
+                    <li><a class="navigationMobile__link navigationMobile__link--3" href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <header class="header">
             <section class="header__headingSection">
                 <h1 class="startAnimationElements headingOne">Pozostańmy w<br> kontakcie</h1>
@@ -69,23 +68,19 @@
                 <h2 class="headingTwo">Napisz do nas</h2>
                 <form class="form" action="">
                     <div class="form__labelBox">
-                        <!-- <label class="form__label" for="">Twoje imie</label> -->
                         <input class="form__input" type="text" placeholder="Imię i nazwisko">
                     </div>
                     <div class="form__labelBox">
-                        <!-- <label class="form__label" for="">Twoje imie</label> -->
                         <input class="form__input" type="text" placeholder="E-mail">
                     </div>
                     <div class="form__labelBox">
-                        <!-- <label class="form__label" for="">Twoje imie</label> -->
                         <input class="form__input" type="text" placeholder="Numer telefonu">
                     </div>
                     <div class="form__labelBox">
-                        <!-- <label class="form__label" for="">Twoje imie</label> -->
                         <input class="form__input" type="text" placeholder="Twoja firma">
                     </div>
                     <textarea placeholder="Twoja wiadomość" class="form__textArea"></textarea>
-                    <button class="form__button">Send</button>
+                    <button class="form__button">Wyślij</button>
                 </form>
             </div>
         </section>
@@ -123,5 +118,6 @@
     <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
     <script src="js/animationGSAP.js"></script>
+    <script src="js/cursor.js"></script>
 </body>
 </html>
